@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; /* Menggunakan border-box untuk menghitung total lebar dan tinggi termasuk padding dan border */
+    list-style: none;
+    font-family: 'Nunito Sans';
+}
+
+
+
+/* Flex container for main layout */
+.main-container {
+    display: flex;
+}
+
+.sidenav {
+    width: 2; /* Adjust the width as necessary */
+    background-color: #f8f9fa; /* Add a background color for better visibility */
+}
+
+.container {
+    flex-grow: 1; /* Ensure the container takes up the remaining space */
+    padding: 20px;
+    margin-left: 280px;
+}
+
+.top {
+    display: flex;
+    margin-top: 80px; /* Mengurangi margin-top dari 1000px ke 100px */
+    align-items: center;
+    justify-content: space-between; /* Memastikan konten berada di ruang yang sama */
+    max-width: 900px; /* Sama dengan lebar tabel */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.armada, .customer, .sopir {
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: space-between; /* Aligns content to the left */
+    flex: 1; /* Membuat elemen flex */
+    max-width: 262px;
+    height: 117px;
+    background-color: #FFFFFF;
+    margin: 0 4px; /* Memberikan jarak antar elemen */
+    box-shadow: 6px 6px 54px -0px #979797; /* (x,y,blur,spread,color/RGB) */
+    border-radius: 14px;
+    padding-left: 10px; /* Optional: Adds some padding from the left edge */
+}
+
+.armada .left, .customer .left, .sopir .left {
+    margin-right: 35px;
+    margin-left: 25px;
+}
+
+.armada .right, .customer .right, .sopir .right {
+    margin-right: 35px;
+}
+
+.armada .nama, .customer .nama, .sopir .nama {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.armada .angka, .customer .angka, .sopir .angka {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.iconTop {
+    width: 60px;
+    height: 60px;
+    border-radius: 23px;
+    background-color: #FCDED6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Menyusun elemen secara vertikal pada layar kecil */
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column; /* Menyusun elemen secara vertikal */
+        align-items: center; /* Memastikan konten tetap di sisi kiri */
+    }
+
+    .armada, .customer, .sopir {
+        width: 100%; /* Memastikan elemen mengambil lebar penuh layar */
+        text-align: center;
+        justify-content: center;
+        margin-left: 0; /* Menghapus margin kiri */
+        margin-right: 0; /* Menghapus margin kanan */
+        position: static; /* Memastikan elemen tidak sticky */
+        z-index: auto; /* Memastikan elemen tidak di depan */
+    }
+
+    .armada + .customer, .customer + .sopir {
+        margin-top: 10px; /* Menambahkan sedikit jarak antara elemen */
+    }
+}
+
+.midTop {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tableResponsive {
+    max-width: 900px; /* Maksimum lebar elemen tabel */
+    background-color: #FFFFFF;
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 14px;
+    border-collapse: collapse;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 3px 5px;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.box select {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.status span {
+    display: flex;
+}
+
+table {
+    width: 100%; /* Pastikan tabel menyesuaikan dengan lebar wadah */
+    max-width: 900px; /* Atur lebar maksimum tabel */
+    font-size: 14px;
+    color: black;
+    white-space: nowrap;
+    text-align: left;
+    border-collapse: collapse; /* Pastikan border-collapse digunakan untuk tampilan tabel yang benar */
+    margin: auto;
+}
+
+table thead {
+    background-color: #F1F4F9;
+}
+
+table thead th {
+    padding: 10px;
+    background-color: #F1F4F9;
+    color: black; /* Mengatur warna teks untuk kontras yang lebih baik */
+}
+
+table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.statusCell {
+    display: flex;
+    width: 100px;
+    height: 25px;
+    border-radius: 13.5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-selesai {
+    background-color: #00B69B;
+    color: white;
+}
+.status-diproses {
+    background-color: #FCBE2D;
+    color: black;
+}
+.status-batal {
+    background-color: #FD5454;
+    color: white;
+}

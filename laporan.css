@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; /* Menggunakan border-box untuk menghitung total lebar dan tinggi termasuk padding dan border */
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+}
+
+.content {
+    flex: 1; /* Biarkan konten menempati ruang yang tersisa */
+    padding: 20px;
+    margin-top: 20px;
+    padding-left: 220px; /* Atur padding kiri agar konten tidak tertutupi oleh sidenav */
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar konten */
+    overflow: auto; /* Tambahkan overflow agar konten dapat discroll jika melebihi lebar */
+}
+
+.profile {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 30px;
+    margin-right: 3%;
+}
+
+.profile svg {
+    width: 55px;
+    height: 55px;
+}
+
+.detailChart {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 5%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 3px 5px;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.box select {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.chart {
+    margin-top: 20px;
+}
+
+.chart svg {
+    width: 95%;
+}
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Menyelaraskan konten secara vertikal dan horizontal */
+    text-align: center;
+    background-color: #00B69B;
+    width: 158px;
+    height: 35px;
+    white-space: nowrap;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.download a {
+    display: flex;
+    align-items: center; /* Menyelaraskan konten secara vertikal */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none; /* Menghapus garis bawah pada link */
+}
+
+.download svg {
+    margin-left: 5px; /* Memberikan jarak antara teks dan ikon */
+}

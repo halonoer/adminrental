@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; /* Menggunakan border-box untuk menghitung total lebar dan tinggi termasuk padding dan border */
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px; /* Tetapkan padding kiri untuk seluruh container */
+}
+
+.content {
+    flex: 1; /* Biarkan konten menempati ruang yang tersisa */
+    padding: 20px;
+    margin-top: 1%;
+    padding-left: 250px; /* Atur padding kiri agar konten tidak tertutupi oleh sidenav */
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar konten */
+    overflow: auto; /* Tambahkan overflow agar konten dapat discroll jika melebihi lebar */
+}
+.topTambah {
+    display: flex;
+    flex-direction: column;
+}
+.tambahData {
+    background-color: #00B69B;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    display: flex; /* Menambahkan ini untuk menggunakan flexbox pada elemen ini */
+    justify-content: center; /* Menambahkan ini untuk memusatkan konten horizontal */
+    align-items: center; /* Menambahkan ini untuk memusatkan konten vertikal */
+    border-radius: 5px;
+}
+
+.tambahData a {
+    color: white;
+    align-items: center;
+}
+
+.tambahData:hover {
+    background-color: #007b69;
+}
+
+.tableResponsive {
+    max-width: 900px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 4px;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    font-size: 14px;
+    color: black;
+    
+    white-space: nowrap;
+    text-align: left;
+    border-collapse: collapse; /* Pastikan border-collapse digunakan untuk tampilan tabel yang benar */
+}
+
+table thead {
+    background-color: #F1F4F9;
+}
+
+table thead th {
+    padding: 10px;
+    background-color: #F1F4F9;
+    color: black; /* Mengatur warna teks untuk kontras yang lebih baik */
+}
+
+table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.box {
+    border: 1px solid grey;
+    padding: 3px 5px;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.box select {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.status span {
+    display: flex;
+}
+
+.edit {
+    width: 35px; /* Menentukan lebar kotak */
+    height: 35px; /* Menentukan tinggi kotak */
+    background-color: #F9CB14; /* Warna latar belakang kotak */
+    border-radius: 5px; /* Membuat sudut kotak membulat */
+    display: flex; /* Menggunakan flexbox untuk penyusunan elemen di dalam kotak */
+    justify-content: center; /* Menyusun elemen secara horizontal di tengah */
+    align-items: center; /* Menyusun elemen secara vertikal di tengah */
+    transition: transform 0.3s, background-color 0.3s; /* Transisi untuk transformasi dan warna latar belakang */
+    margin: 5px;
+}
+
+.edit:hover {
+    transform: scale(1.1);
+    background-color: #f1b500;
+}
+
+.hapus {
+    width: 35px; /* Menentukan lebar kotak */
+    height: 35px; /* Menentukan tinggi kotak */
+    background-color: #FD5454; /* Warna latar belakang kotak */
+    border-radius: 5px; /* Membuat sudut kotak membulat */
+    display: flex; /* Menggunakan flexbox untuk penyusunan elemen di dalam kotak */
+    justify-content: center; /* Menyusun elemen secara horizontal di tengah */
+    align-items: center; /* Menyusun elemen secara vertikal di tengah */
+    transition: transform 0.3s, background-color 0.3s; /* Transisi untuk transformasi dan warna latar belakang */
+    margin: 5px;
+}
+
+.hapus:hover {
+    transform: scale(1.1);
+    background-color: #e34e4e;
+}
+
+.lihat {
+    width: 35px; /* Menentukan lebar kotak */
+    height: 35px; /* Menentukan tinggi kotak */
+    background-color: #4379EE; /* Warna latar belakang kotak */
+    border-radius: 5px; /* Membuat sudut kotak membulat */
+    display: flex; /* Menggunakan flexbox untuk penyusunan elemen di dalam kotak */
+    justify-content: center; /* Menyusun elemen secara horizontal di tengah */
+    align-items: center; /* Menyusun elemen secara vertikal di tengah */
+    transition: transform 0.3s, background-color 0.3s; /* Transisi untuk transformasi dan warna latar belakang */
+    margin: 5px;
+}
+
+.lihat:hover {
+    transform: scale(1.1);
+    background-color: #3b6bd5;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        flex: 1; /* Biarkan konten menempati ruang yang tersisa */
+        padding: 20px;
+        margin-top: 50px;
+        padding-left: 250px; /* Atur padding kiri agar konten tidak tertutupi oleh sidenav */
+        box-sizing: border-box; /* Pastikan padding tidak menambah lebar konten */
+        overflow: auto; /* Tambahkan overflow agar konten dapat discroll jika melebihi lebar */
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .content {
+        flex: 1; /* Biarkan konten menempati ruang yang tersisa */
+        padding: 20px;
+        margin-top: 50px;
+        padding-left: 250px; /* Atur padding kiri agar konten tidak tertutupi oleh sidenav */
+        box-sizing: border-box; /* Pastikan padding tidak menambah lebar konten */
+        overflow: auto; /* Tambahkan overflow agar konten dapat discroll jika melebihi lebar */
+    }
+}

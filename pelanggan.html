@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="tabel.css">
+    <link rel="stylesheet" href="sidenav.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidenav">        
+            <div id="navbarContainer"></div>
+        </div>
+        <div class="content">
+            <div id="iconProfile"></div>
+            <div class="tableResponsive">
+            <div class="top">
+                <div class="topTambah">
+                    <h1>Data Pelanggan</h1>
+                    <div class="tambahData">
+                        <a href="">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.63619 14.3182H6.36346V8.63637H0.681641V6.36364H6.36346V0.681824H8.63619V6.36364H14.318V8.63637H8.63619V14.3182Z" fill="white"/>
+                            </svg>
+                            Tambah Data
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <select>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No. Id</th>
+                        <th>Nama</th> 
+                        <th>Alamat</th>
+                        <th>No. Telp</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2314142152</td>
+                        <td>Noi</td>
+                        <td>Surabaya</td>
+                        <td>0812345678</td>
+                        <td class="status">
+                            <span>
+                                <a class="edit" href="#">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3487 3.64171C20.4477 3.79193 20.4918 3.97169 20.4736 4.15066C20.4554 4.32962 20.3759 4.49681 20.2487 4.624L10.6727 14.199C10.5747 14.2969 10.4525 14.367 10.3185 14.4021L6.32998 15.4438C6.19813 15.4782 6.05959 15.4775 5.92809 15.4418C5.7966 15.4061 5.67673 15.3366 5.58039 15.2403C5.48404 15.1439 5.41457 15.024 5.37886 14.8926C5.34316 14.7611 5.34246 14.6225 5.37685 14.4907L6.41852 10.5032C6.44893 10.3835 6.50629 10.2723 6.58623 10.1782L16.1977 0.572962C16.3442 0.426659 16.5427 0.344482 16.7498 0.344482C16.9568 0.344482 17.1554 0.426659 17.3019 0.572962L20.2487 3.51879C20.2861 3.5563 20.3196 3.59748 20.3487 3.64171ZM18.5914 4.07088L16.7498 2.23025L7.87685 11.1032L7.22581 13.5959L9.71852 12.9448L18.5914 4.07088Z" fill="white"/>
+                                        <path d="M18.4588 15.875C18.7435 13.4417 18.8344 10.9895 18.7307 8.54171C18.7284 8.48404 18.7381 8.42653 18.759 8.37276C18.78 8.31899 18.8118 8.27012 18.8526 8.22921L19.8776 7.20421C19.9056 7.17604 19.9411 7.15656 19.9799 7.14811C20.0187 7.13966 20.0592 7.1426 20.0963 7.15657C20.1335 7.17054 20.1659 7.19495 20.1895 7.22687C20.2132 7.25879 20.2271 7.29686 20.2296 7.3365C20.4226 10.244 20.3493 13.1631 20.0109 16.0573C19.7651 18.1636 18.0734 19.8146 15.9765 20.049C12.3362 20.4521 8.66261 20.4521 5.02234 20.049C2.92651 19.8146 1.2338 18.1636 0.987969 16.0573C0.556094 12.3651 0.556094 8.63503 0.987969 4.94275C1.2338 2.8365 2.92547 1.18546 5.02234 0.951086C7.78523 0.644713 10.5689 0.570495 13.3442 0.729211C13.3839 0.732063 13.422 0.746238 13.4539 0.770057C13.4858 0.793876 13.5102 0.826341 13.5243 0.863608C13.5383 0.900874 13.5414 0.941381 13.5331 0.980331C13.5248 1.01928 13.5055 1.05504 13.4776 1.08338L12.4432 2.11671C12.4027 2.15707 12.3543 2.18871 12.3011 2.20967C12.2479 2.23063 12.191 2.24047 12.1338 2.23859C9.81792 2.15986 7.49938 2.24863 5.1963 2.50421C4.52332 2.5787 3.89511 2.87788 3.41313 3.35343C2.93115 3.82898 2.62357 4.45313 2.54005 5.12504C2.12239 8.69621 2.12239 12.3039 2.54005 15.875C2.62357 16.547 2.93115 17.1711 3.41313 17.6467C3.89511 18.1222 4.52332 18.4214 5.1963 18.4959C8.69109 18.8865 12.3078 18.8865 15.8036 18.4959C16.4766 18.4214 17.1048 18.1222 17.5868 17.6467C18.0687 17.1711 18.3753 16.547 18.4588 15.875Z" fill="white"/>
+                                        </svg>                                        
+                                </a>
+                                <a class="hapus" href="#">
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.7493 16.7917C14.7493 17.6205 14.4201 18.4153 13.8341 19.0014C13.248 19.5874 12.4531 19.9167 11.6243 19.9167H4.33268C3.50388 19.9167 2.70902 19.5874 2.12297 19.0014C1.53692 18.4153 1.20768 17.6205 1.20768 16.7917V4.29167H0.166016V1.16667H4.85352L5.89518 0.125H10.0618L11.1035 1.16667H15.791V4.29167H14.7493V16.7917ZM2.24935 4.29167V16.7917C2.24935 17.3442 2.46884 17.8741 2.85954 18.2648C3.25024 18.6555 3.78015 18.875 4.33268 18.875H11.6243C12.1769 18.875 12.7068 18.6555 13.0975 18.2648C13.4882 17.8741 13.7077 17.3442 13.7077 16.7917V4.29167H2.24935ZM14.7493 3.25V2.20833H10.5827L9.54102 1.16667H6.41602L5.37435 2.20833H1.20768V3.25H14.7493ZM4.33268 6.375H5.37435V16.7917H4.33268V6.375ZM10.5827 6.375H11.6243V16.7917H10.5827V6.375Z" fill="white"/>
+                                        </svg>                                                                          
+                                </a>
+                                <a class="lihat" href="#">
+                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.3481 7.17357C20.0078 2.84718 15.9036 0.229126 11.362 0.229126C6.82031 0.229126 2.7092 2.84718 0.389757 7.17357L0.195312 7.49996L0.375868 7.83329C2.71615 12.1597 6.82031 14.7777 11.362 14.7777C15.9036 14.7777 20.0148 12.1944 22.3481 7.83329L22.5286 7.49996L22.3481 7.17357ZM11.362 13.3541C7.45226 13.3541 3.86198 11.1736 1.77865 7.49996C3.86198 3.82635 7.45226 1.64579 11.362 1.64579C15.2717 1.64579 18.8203 3.83329 20.9384 7.49996C18.8203 11.1736 15.2648 13.3541 11.362 13.3541Z" fill="white"/>
+                                        <path d="M11.5631 2.75696C10.6215 2.76383 9.70309 3.04959 8.92382 3.57813C8.14454 4.10667 7.53937 4.8543 7.18475 5.72658C6.83013 6.59885 6.74195 7.55666 6.93137 8.47902C7.12078 9.40138 7.57928 10.2469 8.24897 10.9089C8.91865 11.5708 9.76948 12.0194 10.694 12.1981C11.6185 12.3767 12.5752 12.2774 13.4433 11.9127C14.3114 11.5479 15.0519 10.9341 15.5713 10.1487C16.0908 9.36331 16.3658 8.44162 16.3617 7.50002C16.359 6.87324 16.2326 6.25316 15.9898 5.67531C15.747 5.09746 15.3926 4.57321 14.9468 4.13259C14.501 3.69197 13.9727 3.34366 13.392 3.1076C12.8114 2.87154 12.1899 2.75239 11.5631 2.75696ZM11.5631 10.8959C10.898 10.889 10.2498 10.6858 9.69978 10.3117C9.14981 9.93762 8.72262 9.40938 8.47189 8.79331C8.22115 8.17725 8.15804 7.50083 8.29048 6.84901C8.42292 6.19719 8.745 5.59904 9.21629 5.12968C9.68757 4.66032 10.287 4.34068 10.9394 4.2109C11.5917 4.08112 12.2679 4.14699 12.8829 4.40024C13.498 4.65349 14.0245 5.08283 14.3963 5.63433C14.7681 6.18582 14.9687 6.8349 14.9728 7.50002C14.9747 7.94766 14.8877 8.39121 14.7168 8.80496C14.5459 9.2187 14.2946 9.59441 13.9774 9.91029C13.6602 10.2262 13.2835 10.4759 12.8691 10.6451C12.4546 10.8143 12.0107 10.8995 11.5631 10.8959Z" fill="white"/>
+                                        </svg>                                                                          
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+                <div class="bottom">
+
+                </div>
+        </div>
+    </div>
+
+    <script>
+        // Memuat file navbar.html menggunakan Fetch API
+        fetch('sidenav.html')
+            .then(response => {
+                // Memastikan respon adalah OK (200)
+                if (!response.ok) {
+                    throw new Error('Gagal memuat navbar.');
+                }
+                // Mengembalikan teks dari respon
+                return response.text();
+            })
+            .then(data => {
+                // Menyisipkan konten navbar.html ke dalam elemen dengan ID navbarContainer
+                document.getElementById('navbarContainer').innerHTML = data;
+
+                // menu toggle setelah navbar dimuat
+                const menuToggle = document.querySelector('.menu-toggle input');
+                const nav = document.querySelector('nav ul');
+
+                menuToggle.addEventListener('click', function () {
+                  nav.classList.toggle('slide');
+                });
+            })
+            .catch(error => {
+                console.error('Ada kesalahan:', error);
+            });
+            // Memuat file iconProfile.html menggunakan Fetch API
+fetch('iconProfile.html')
+    .then(response => {
+        // Memastikan respon adalah OK (200)
+        if (!response.ok) {
+            throw new Error('Gagal memuat iconProfile.');
+        }
+        // Mengembalikan teks dari respon
+        return response.text();
+    })
+    .then(data => {
+        // Menyisipkan konten iconProfile.html ke dalam elemen dengan ID iconProfile
+        document.getElementById('iconProfile').innerHTML = data;
+
+        // Menambahkan logika tambahan jika diperlukan setelah memuat iconProfile
+        // Misalnya, menambahkan event listener atau memanipulasi DOM
+    })
+    .catch(error => {
+        console.error('Ada kesalahan:', error);
+    });
+
+    </script>
+</body>
+</html>
