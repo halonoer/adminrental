@@ -1,0 +1,2 @@
+# adminrental
+html, css
